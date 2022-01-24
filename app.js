@@ -20,7 +20,7 @@ app.get("/",function(req,res)
 app.post("/",function(req,res)
 {
     const query = req.body.CityName;  // we get name theat we passed in html form. For input has name "CityName"
-    const apikey = "514051f3a257a079d12716327aa353e6";  // generated api from openweather.com
+    const apikey = "";  // enter your api generated from openweather.com
     const units = "metric";
     // below url split parts are above this line,
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid="+apikey+"&units="+units; //this is the API url from postman, originally generated from OpenWeather.com 
